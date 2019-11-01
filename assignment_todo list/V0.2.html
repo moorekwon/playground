@@ -53,7 +53,7 @@
         const content = $todoInput.value.trim();
         if (!content) return;
 
-        const id = Math.max(...todos.map(todo => todo.id)) + 1;
+        const id = !(todos.length) ? 1 : Math.max(...todos.map(todo => todo.id)) + 1;
         todos = [...todos, { id, content, completed: false }];
         render();
     };
