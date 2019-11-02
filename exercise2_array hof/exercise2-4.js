@@ -10,10 +10,6 @@ function addTodo(newTodo) {
     todos = [newTodo, ...todos];
 }
 
-addTodo({
-    id: 4,
-    content: 'Test',
-    completed: false
-});
+addTodo({ id: 4, content: 'Test', completed: false });
 
 console.log(todos);
